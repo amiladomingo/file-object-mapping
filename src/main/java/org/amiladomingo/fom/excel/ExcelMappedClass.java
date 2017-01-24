@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.amiladomingo.frm.excel;
+package org.amiladomingo.fom.excel;
 
 import java.util.ArrayList;
 import java.util.List;

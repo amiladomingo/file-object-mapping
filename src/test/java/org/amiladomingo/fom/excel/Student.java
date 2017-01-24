@@ -1,9 +1,9 @@
-package org.amiladomingo.frm.excel;
+package org.amiladomingo.fom.excel;
 
 import java.util.Date;
 
-import org.amiladomingo.frm.excel.annotation.Column;
-import org.amiladomingo.frm.excel.annotation.Mapped;
+import org.amiladomingo.fom.excel.annotation.Column;
+import org.amiladomingo.fom.excel.annotation.Mapped;
 
 @Mapped
 public class Student {
@@ -15,7 +15,7 @@ public class Student {
 	private String name;
 
 	@Column(order = 2)
-	private Date createdDate;
+	private Date birthDate;
 
 	public int getId() {
 		return id;
@@ -25,7 +25,7 @@ public class Student {
 		return name;
 	}
 
-	public Date getCreatedDate() {
-		return createdDate;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 }

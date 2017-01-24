@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.amiladomingo.frm.excel.annotation;
+package org.amiladomingo.fom.excel.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

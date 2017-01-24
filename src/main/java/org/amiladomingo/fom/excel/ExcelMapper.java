@@ -1,4 +1,4 @@
-package org.amiladomingo.frm.excel;
+package org.amiladomingo.fom.excel;
 
 import java.io.File;
 import java.io.IOException;

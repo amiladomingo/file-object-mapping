@@ -1,0 +1,77 @@
+= File Object Mapping
+
+Utility API for mapping CSV like file types to Objects
+
+Below is a sample domain class that we would like to map to an object. 
+
+Notice the use of below annotations
+	@Mapped - to inform that this class should be mapped
+	@Column - to inform the column information
+
+[source,java,indent=0]
+	package org.amiladomingo.fom.excel;
+	
+	import java.util.Date;
+	import org.amiladomingo.fom.excel.annotation.Column;
+	import org.amiladomingo.fom.excel.annotation.Mapped;
+	
+	@Mapped
+	public class Student {
+	
+		@Column(order = 1)
+		private int id;
+	
+		@Column(order = 0)
+		private String name;
+	
+		@Column(order = 2)
+		private Date birthDate;
+	
+		public int getId() {
+			return id;
+		}
+	
+		public String getName() {
+			return name;
+		}
+	
+		public Date getBirthDate() {
+			return birthDate;
+		}
+	}
+
+Below is a test that maps the 
+
+[source,java,indent=0]
+	package org.amiladomingo.fom.excel;
+	
+	import java.io.File;
+	import java.io.IOException;
+	import java.net.URL;
+	import java.util.List;
+	
+	import junit.framework.Assert;
+	
+	import org.amiladomingo.fom.excel.ExcelTemplate;
+	import org.junit.Before;
+	import org.junit.Test;
+	
+	public class ExcelTemplateTest {
+	
+		private ExcelTemplate excelTemplate;
+	
+		@Before
+		public void setUp() throws Exception {
+			excelTemplate = new ExcelTemplate();
+		}
+	
+		@Test
+		public void testFromExcel2007() throws SecurityException, IOException, NoSuchFieldException, InstantiationException,
+				IllegalAccessException {
+			URL resource = this.getClass().getResource("students.xlsx");
+	
+			List<Student> students = excelTemplate.fromExcel2007(new File(resource.getFile()), Student.class);
+	
+			Assert.assertEquals(3, students.size());
+		}
+	}

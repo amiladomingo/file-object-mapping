@@ -1,4 +1,4 @@
-package org.amiladomingo.frm.excel.cfg;
+package org.amiladomingo.fom.excel.cfg;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

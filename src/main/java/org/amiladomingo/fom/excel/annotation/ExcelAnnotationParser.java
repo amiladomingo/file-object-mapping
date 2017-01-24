@@ -1,13 +1,13 @@
 /**
  * 
  */
-package org.amiladomingo.frm.excel.annotation;
+package org.amiladomingo.fom.excel.annotation;
 
 import java.lang.reflect.Field;
 
-import org.amiladomingo.frm.excel.ExcelMappedClass;
-import org.amiladomingo.frm.excel.ExcelMappedColumn;
-import org.amiladomingo.frm.excel.MappingNotFoundException;
+import org.amiladomingo.fom.excel.ExcelMappedClass;
+import org.amiladomingo.fom.excel.ExcelMappedColumn;
+import org.amiladomingo.fom.excel.MappingNotFoundException;
 
 /**
  * @author Amila Domingo

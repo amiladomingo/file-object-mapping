@@ -1,6 +1,6 @@
-package org.amiladomingo.frm.excel.annotation;
+package org.amiladomingo.fom.excel.annotation;
 
-import org.amiladomingo.frm.excel.ExcelMappedClass;
+import org.amiladomingo.fom.excel.ExcelMappedClass;
 
 public interface AnnotationParser {
 

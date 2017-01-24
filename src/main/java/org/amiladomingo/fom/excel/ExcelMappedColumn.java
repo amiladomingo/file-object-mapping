@@ -1,9 +1,9 @@
 /**
  * 
  */
-package org.amiladomingo.frm.excel;
+package org.amiladomingo.fom.excel;
 
-import org.amiladomingo.frm.excel.annotation.Column;
+import org.amiladomingo.fom.excel.annotation.Column;
 
 /**
  * @author Amila Domingo

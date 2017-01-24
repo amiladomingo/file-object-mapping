@@ -1,4 +1,4 @@
-package org.amiladomingo.frm.excel.cfg;
+package org.amiladomingo.fom.excel.cfg;
 
 public class Column {
 

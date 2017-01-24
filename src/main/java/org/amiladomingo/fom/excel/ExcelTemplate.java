@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.amiladomingo.frm.excel;
+package org.amiladomingo.fom.excel;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,8 +21,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.amiladomingo.frm.excel.annotation.AnnotationParser;
-import org.amiladomingo.frm.excel.annotation.ExcelAnnotationParser;
+import org.amiladomingo.fom.excel.annotation.AnnotationParser;
+import org.amiladomingo.fom.excel.annotation.ExcelAnnotationParser;
 
 /**
  * Contains the excel related operations
